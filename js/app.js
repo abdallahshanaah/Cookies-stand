@@ -4,7 +4,6 @@ var Seattle = {
     mincust_hour: 23,
     maxcust_hour: 65,
     avgCookies: 6.3,
-    customer: 0,
     randomco: [],
     avgArray: [],
     getCustomers: function () {
@@ -24,7 +23,7 @@ var Seattle = {
     render: function () {
         //var result=0;
         this.getCoutCookies();
-        var divul = document.getElementById('seattle');
+        var divul = document.getElementById('Seattle');
         var ul = document.createElement('ul');
         divul.appendChild(ul);
         console.log(ul);
