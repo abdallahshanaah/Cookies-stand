@@ -22,6 +22,7 @@ var Seattle = {
         }
     },
     render: function () {
+        //var result=0;
         this.getCoutCookies();
         var divul = document.getElementById('Seattle');
         var ul = document.createElement('ul');
