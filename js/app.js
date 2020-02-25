@@ -4,7 +4,6 @@ var Seattle = {
     mincust_hour: 23,
     maxcust_hour: 65,
     avgCookies: 6.3,
-    customer: 0,
     randomco: [],
     avgArray: [],
     getCustomers: function () {
