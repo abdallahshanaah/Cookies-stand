@@ -69,6 +69,21 @@ Location.prototype.dataRender = function () {
         tdEL.textContent = this.total;
 
 };
+var locform=document.getElementById('locform');
+locform.addEventListener('submit',function(event){
+event.preventDefault();
+var locname=event.target.name.value;
+var min=event.target.mincust_hour.value;
+var max=event.target.maxcust_hour.value;
+var avg=event.target.avgCookies.value;
+new Location(locname,min,max,avg).dataRender();
+})
+
+
+
+
+
+
 
      new Location('Seattle', 23, 65, 6.3);
      new Location('Tokyo', 3, 24, 1.2);
@@ -103,7 +118,7 @@ Location.prototype.dataRender = function () {
     var bigtotal=0;
     for (let i = 0; i < hours.length; i++) {
         total1_total=0;
-        for (let j = 0; i < locArry.length; j++) {
+        for (let j = 0; j < locArry.length; j++) {
             total1_total += locArry[j].avgArray[i];
             console.log(locArry[j].avgArray[j]);
         }
