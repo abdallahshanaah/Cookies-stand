@@ -77,8 +77,14 @@ var min=event.target.mincust_hour.value;
 var max=event.target.maxcust_hour.value;
 var avg=event.target.avgCookies.value;
 new Location(locname,min,max,avg).dataRender();
-})
+myDeleteFunction();
 
+
+})
+function myDeleteFunction() {
+    document.getElementById("Table").deleteRow(Table.rows.length - 1);
+    console.log(document.getElementById("Table").deleteRow(Table.rows.length - 1));
+  }
 
 
 
