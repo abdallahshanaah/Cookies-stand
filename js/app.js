@@ -103,7 +103,7 @@ Location.prototype.dataRender = function () {
     var bigtotal=0;
     for (let i = 0; i < hours.length; i++) {
         total1_total=0;
-        for (let j = 0; i < locArry.length; j++) {
+        for (let j = 0; j < locArry.length; j++) {
             total1_total += locArry[j].avgArray[i];
             console.log(locArry[j].avgArray[j]);
         }
