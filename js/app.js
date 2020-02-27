@@ -80,11 +80,6 @@ new Location(locname,min,max,avg).dataRender();
 })
 
 
-
-
-
-
-
      new Location('Seattle', 23, 65, 6.3);
      new Location('Tokyo', 3, 24, 1.2);
      new Location('Dubai', 11, 38, 3.7);
