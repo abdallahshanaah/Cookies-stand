@@ -69,6 +69,21 @@ Location.prototype.dataRender = function () {
         tdEL.textContent = this.total;
 
 };
+var locform=document.getElementById('locform');
+locform.addEventListener('submit',function(event){
+event.preventDefault();
+var locname=event.target.name.value;
+var min=event.target.mincust_hour.value;
+var max=event.target.maxcust_hour.value;
+var avg=event.target.avgCookies.value;
+new Location(locname,min,max,avg).dataRender();
+})
+
+
+
+
+
+
 
      new Location('Seattle', 23, 65, 6.3);
      new Location('Tokyo', 3, 24, 1.2);
