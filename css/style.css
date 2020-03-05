@@ -1,25 +1,129 @@
+/* #headerimage{
+  width: 250px;
+}
+#headerimg{
+  background-color: chocolate;
+    margin: -8px;
+    padding: 20px;
+  
+} 
+h1{
+  float: right;
+    margin-left: 0px;
+    position: relative;
+    right: 300px;
+    font-family: cursive;
+    font-size: -webkit-xxx-large;
+    top: -35px;
 
-  div {
-    position:relative;
-    z-index:1;
-    height:450px;
-    -webkit-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
-  box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
-  }
-  
-  main {
-   
-    position:relative;
-    z-index:2;
-    background:rgb(197, 64, 64);
-    width:100%;
-  
-    margin:0;
-    padding:10px 20px;
-    -webkit-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
-    box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
-    text-align:left;
-  }
-  
+ header{
+  margin: 20px;
+  margin-top: -20px;
+
+
+} 
+main{
+  clear: both;
+}
+
+
+
+#locform{
+  text-align-last: center;
+  margin: 60px;
+  display: inline-block;
+  width: -webkit-fill-available;
+} 
+label{
+padding: 30px;
+font-size: 20px;
+}     */
+
+
+body {
+margin: 0;
+}
+header { 
+background: url(https://envato-shoebox-0.imgix.net/6e61/b7e5-7c9d-42f2-aece-be35b5c289f5/IMG_2913.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1400&s=e795f4d603578d07b37028eb947e5acb) no-repeat;
+padding-top: 55%;
+background-size: cover;
+font-family: 'Sucrose Bold Two';
+}
+header img {
+position: absolute;
+top: 0;
+right: 0;
+width: 10%;
+}
+header h1 { 
+position: fixed;
+top: 2rem;
+right: 2rem;
+font-size: 10vw;
+line-height: .8;
+margin-top: 0;
+text-align: center;
+}
+header h1 span {
+display: block;
+font-size: 8.75vw;
+}
+main { 
+background:rgb(214, 211, 211);
+position: relative;
+border: 1px solid rgb(214, 211, 211);
+font-family: 'IM Fell French Canon Pro';
+font-size: 1.4rem;
+padding: 2rem 25%;
+line-height: 1.6;
+}
+@media all and (max-width: 400px) {
+main { padding: 2rem; }
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgb(174, 179, 179);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+  text-align: center;
+}
+#Submit {
+  border: 1px solid rgb(186, 192, 192);
+    background: rgba(20, 20, 20, .6);
+    font-size: 18px;
+    color: white;
+    margin-top: 11px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: .4s;
+    text-align: center;
+    margin: 195px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    border-bottom: outset;
+}
+h2{
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+td{
+  padding: 10px;
+}
+/* #Seattle,#Tokyo,#Dubai,#Paris,#Lima{
+  float: left;
+    margin-right: 30px;
+} */
+footer{
+  clear: both;
+}

@@ -3,6 +3,7 @@ var hours = [6 + `am  `, 7 + `am  `, 8 + `am  `, 9 + `am  `, 10 + `am  `, 11 + `
 var locArry =[];
 var tableDiv = document.getElementById("display");
 var table = document.createElement("table"); 
+var form= document.getElementById('form');
  tableDiv.appendChild(table);
 function Location(name, mincust_hour, maxcust_hour, avgCookies) {
     this.name = name;
@@ -35,7 +36,7 @@ Location.prototype.getCoutCookies = function () {
 
 Location.prototype.render = function () {
     var divEl = document.getElementById(`${this.name}`);
-    table.appendChild(divEl);
+    form.appendChild(divEl);
     //console.log(divEl);
     var ulEl = document.createElement('ul');
     divEl.appendChild(ulEl);
@@ -78,12 +79,16 @@ var max=event.target.maxcust_hour.value;
 var avg=event.target.avgCookies.value;
 new Location(locname,min,max,avg).dataRender();
 myDeleteFunction();
-
+footerReander();
 
 })
+
 function myDeleteFunction() {
-    document.getElementById("Table").deleteRow(Table.rows.length - 1);
-    console.log(document.getElementById("Table").deleteRow(Table.rows.length - 1));
+    var rowCount = table.rows.length ;
+    table.deleteRow(rowCount -1);
+    console.log(rowCount);
+    // document.getElementById("Table").deleteRow(Table.rows.length - 1);
+    // console.log(document.getElementById("Table").deleteRow(Table.rows.length - 1));
   }
 
      new Location('Seattle', 23, 65, 6.3);
@@ -121,7 +126,7 @@ function myDeleteFunction() {
         total1_total=0;
         for (let j = 0; j < locArry.length; j++) {
             total1_total += locArry[j].avgArray[i];
-            console.log(locArry[j].avgArray[j]);
+            //console.log(locArry[j].avgArray[j]);
         }
         var tdEL = document.createElement("td");
         trEL.appendChild(tdEL);
